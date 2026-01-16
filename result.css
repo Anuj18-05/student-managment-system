@@ -1,0 +1,171 @@
+/* Page base */
+body {
+    background: linear-gradient(135deg, #f4f7ff, #e6ecff);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeDown 0.8s ease;
+}
+
+/* Header title */
+.hd {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Optional header id */
+#head {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* About section */
+.about {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    animation: slideInLeft 1s ease;
+}
+
+/* Student info lines */
+.about ol {
+    margin-left: 20px;
+    padding: 8px 10px;
+    font-size: 17px;
+    background: #f1f5ff;
+    border-left: 4px solid #1e90ff;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+/* Student image */
+.about img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    animation: slideInRight 1s ease;
+}
+
+/* Table */
+table {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    animation: scaleIn 0.8s ease;
+}
+
+/* Borders */
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+/* Cells */
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table header */
+th {
+    background: linear-gradient(to right, #1e90ff, #007bff);
+    color: white;
+}
+
+/* Zebra rows */
+tr:nth-child(even) {
+    background-color: #f3f6ff;
+}
+
+/* Hover animation */
+tr {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background-color: #d1ecf1;
+    transform: scale(1.01);
+}
+
+/* Caption */
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
